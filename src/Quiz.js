@@ -67,7 +67,7 @@ export default function Quiz({ questions }) {
                 <div className={styles.quizContainer}>
                     {!showResult ? (
                         <>
-                            {showAnswerTimer && <AnswerTimer duration={10} onTimeUp={handleTimeUp}/>}
+                            {showAnswerTimer && <AnswerTimer duration={20} onTimeUp={handleTimeUp}/>}
                             <span className={styles.activeQuestion}>{currentQuestion + 1}</span>
                             <span className={styles.totalQuestion}>/{questions.length}</span>
                             <h2>{question}</h2>
